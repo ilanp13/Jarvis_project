@@ -1,6 +1,6 @@
 # DEUS Project
 
-A voice-controlled AI desktop companion inspired by "The Machine" from *Person of Interest*. Features an animated floating eye overlay and a voice interface that connects to a remote AI agent via WebSocket.
+A voice-controlled AI desktop companion inspired by *Deus*, the Israeli TV show. Features an animated floating eye overlay and a voice interface that connects to a remote AI agent via WebSocket.
 
 **macOS only** — uses native AppKit/Quartz for the transparent overlay window.
 

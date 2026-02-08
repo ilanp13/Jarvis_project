@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 DEUS Eye - Animated desktop companion with video frames
-Based on "The Machine" from Person of Interest
+Inspired by "Deus" (Israeli TV show)
 """
 
 import sys
