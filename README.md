@@ -4,6 +4,10 @@ A voice-controlled AI desktop companion inspired by *Deus*, the Israeli TV show.
 
 **macOS only** — uses native AppKit/Quartz for the transparent overlay window.
 
+## Demo
+
+![DEUS Demo](demo.gif)
+
 ## How It Works
 
 1. An animated eye renders as a transparent always-on-top overlay (602 PNG frames at 30fps)
