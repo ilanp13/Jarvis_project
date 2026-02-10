@@ -1,16 +1,16 @@
-# DEUS Project
+# Jarvis Project
 
-A voice-controlled AI desktop companion inspired by *Deus*, the Israeli TV show. Features an animated floating eye overlay and a voice interface that connects to a remote AI agent via WebSocket.
+A voice-controlled AI desktop companion inspired by *Jarvis* from Iron Man. Features an animated floating arc reactor overlay and a voice interface that connects to a remote AI agent via WebSocket.
 
 **macOS only** — uses native AppKit/Quartz for the transparent overlay window.
 
 <p align="center">
-  <img src="demo.gif" alt="DEUS Demo" />
+  <img src="demo.gif" alt="Jarvis Demo" />
 </p>
 
 ## How It Works
 
-1. An animated eye renders as a transparent always-on-top overlay (602 PNG frames at 30fps)
+1. An animated arc reactor renders as a transparent always-on-top overlay (601 PNG frames at 30fps)
 2. Hold **Right Command** to record audio from your mic
 3. Speech is transcribed via Google Gemini STT
 4. The transcription is sent to a remote agent (clawdbot) over an SSH-tunneled WebSocket
@@ -20,12 +20,12 @@ A voice-controlled AI desktop companion inspired by *Deus*, the Israeli TV show.
 
 ```bash
 # Clone
-git clone https://github.com/buzagloidan/deus_project.git
-cd deus_project
+git clone https://github.com/ilanp13/Jarvis_project.git
+cd Jarvis_project
 
 # Create venv and install deps
-python3 -m venv deus_venv
-source deus_venv/bin/activate
+python3 -m venv jarvis_venv
+source jarvis_venv/bin/activate
 pip install -r requirements.txt
 
 # Configure environment
@@ -36,16 +36,16 @@ cp .env.example .env
 You also need:
 - An SSH key configured for your remote server
 - A Google Gemini API key
-- The animation frames in `deus_frames_transparent/` (602 PNGs)
+- The animation frames in `jarvis_frames_transparent/` (601 PNGs)
 
 ## Usage
 
 ```bash
 # Eye animation only
-./run_deus.sh
+./run_jarvis.sh
 
 # Full system (eye + voice)
-./run_deus_full.sh
+./run_jarvis_full.sh
 ```
 
 **Controls:**
@@ -56,12 +56,12 @@ You also need:
 ## Project Structure
 
 ```
-deus_eye.py            # Animated transparent eye overlay (AppKit/Quartz)
-deus_voice.py          # Simple text-based agent interface
-deus_voice_full.py     # Full voice interface (STT → Agent → TTS)
-run_deus.sh            # Launch eye only
-run_deus_full.sh       # Launch eye + voice
-deus_frames_transparent/  # Animation frames (not included in repo)
+jarvis_eye.py            # Animated transparent eye overlay (AppKit/Quartz)
+jarvis_voice.py          # Simple text-based agent interface
+jarvis_voice_full.py     # Full voice interface (STT -> Agent -> TTS)
+run_jarvis.sh            # Launch eye only
+run_jarvis_full.sh       # Launch eye + voice
+jarvis_frames_transparent/  # Animation frames (not included in repo)
 ```
 
 ## Disclaimer
