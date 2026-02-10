@@ -8,6 +8,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
+jarvis_venv/
 deus_venv/
 
 # macOS
@@ -25,3 +26,6 @@ deus_venv/
 # IDE
 .vscode/
 .idea/
+
+# Generated preview
+jarvis_preview.png
